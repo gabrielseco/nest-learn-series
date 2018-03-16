@@ -25,10 +25,15 @@
       "helpMessage": "Use \"npm run commit\" instead, we use conventional-changelog format :) (https://github.com/commitizen/cz-cli)"
     }
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "keywords": [],
   "author": "Gabriel García Seco",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^8.1.0",
     "babel-eslint": "^8.2.2",
     "babel-jest": "^23.0.0-alpha.0",
     "babel-loader": "^7.1.4",
@@ -53,6 +58,7 @@
     "lint-staged": "^7.0.0",
     "mini-css-extract-plugin": "^0.2.0",
     "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.1",
     "prettier": "^1.11.1",
     "react-hot-loader": "^4.0.0",
     "react-test-renderer": "^16.2.0",

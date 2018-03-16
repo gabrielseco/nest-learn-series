@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Hello.scss';
 
 const Hello = ({ name }) => (
-  <h1 className={styles.title}>
+  <h1 className={styles.container}>
     Hello my name <em>is</em> {name}
   </h1>
 );
