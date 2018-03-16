@@ -1,3 +1,6 @@
-import { render } from 'react-dom';
+import React from "react";
+import { render } from "react-dom";
 
-render(<div>Hola mundo</div>, document.getElementById('root'));
+import Hello from "./Hello";
+
+render(<Hello name="Nico" />, document.getElementById("root"));
