@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { hot } from 'react-hot-loader';
 import styles from './Hello.scss';
 
 const Hello = ({ name }) => (
@@ -13,4 +12,4 @@ Hello.propTypes = {
   name: PropTypes.string.isRequired
 };
 
-export default hot(module)(Hello);
+export default Hello;
