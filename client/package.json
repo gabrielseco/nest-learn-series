@@ -12,13 +12,13 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier --write",
+      "prettier --write --single-quote",
       "git add"
     ]
   },
   "config": {
     "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
+      "path": "client/node_modules/cz-conventional-changelog"
     },
     "validate-commit-msg": {
       "types": "conventional-commit-types",
@@ -35,6 +35,7 @@
     "babel-preset-react": "^6.24.1",
     "commitizen": "^2.9.6",
     "css-loader": "^0.28.10",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.18.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
