@@ -1,8 +1,7 @@
-import * as data from './../data/films.json';
 import { IMigrationFilm } from './interfaces';
 import { MigrationFilm } from './migration-film.model';
 
-class Migration {
+export class Migration {
   data: IMigrationFilm[];
   constructor(data: IMigrationFilm[]) {
     this.data = data;
@@ -16,7 +15,3 @@ class Migration {
     return this.data.map(film => new MigrationFilm(film));
   }
 }
-
-const migration: Migration = new Migration(<any>data);
-
-migration.init();
