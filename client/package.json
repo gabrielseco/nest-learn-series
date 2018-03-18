@@ -18,7 +18,8 @@
     "*.js": [
       "prettier --write --single-quote",
       "git add"
-    ]
+    ],
+    "*.scss": "stylelint"
   },
   "config": {
     "commitizen": {
