@@ -1,8 +1,18 @@
 import React from 'react';
-/* import PropTypes from 'prop-types';
-import styles from './Header.scss'; */
+import styles from './Header.scss';
+import { NavItem } from './../NavItem';
 
-const Header = () => <header>My new header</header>;
+const Header = () => (
+  <header className={styles.header}>
+    <nav className={styles.container}>
+      <NavItem URL="/">Films</NavItem>
+      <NavItem URL="/tv">TV Shows</NavItem>
+      <NavItem URL="/books">Books</NavItem>
+      <NavItem URL="/dictionary">Words</NavItem>
+      <NavItem URL="/stats">Stats</NavItem>
+    </nav>
+  </header>
+);
 
 Header.propTypes = {};
 

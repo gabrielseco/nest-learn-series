@@ -10,6 +10,7 @@
     "color-named": "never",
     "color-hex-length": "long",
     "selector-class-pattern": null,
-    "string-quotes": "single"
+    "string-quotes": "single",
+    "block-no-empty": null
   }
 }
