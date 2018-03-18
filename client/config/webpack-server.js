@@ -2,6 +2,9 @@ const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const config = require('./webpack.config');
 
+const HOST = 'localhost';
+const PORT = 3000;
+
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
@@ -22,10 +25,10 @@ new WebpackDevServer(webpack(config), {
     warnings: true,
     publicPath: false
   }
-}).listen(8000, 'localhost', err => {
+}).listen(PORT, HOST, err => {
   if (err) {
     return console.log(err);
   }
 
-  console.log(`Listening at http://locahost:8000/`);
+  console.log(`Listening at http://${HOST}:${PORT}/`);
 });

@@ -34,8 +34,8 @@ class ReactStatefulComponent extends Component {
   defaultReactJS(component) {
     return `
       import React, { Component } from 'react'
-      import PropTypes from 'prop-types'
-      import styles from './${component}.scss'
+      /*import PropTypes from 'prop-types'
+      import styles from './${component}.scss'*/
 
       class ${component} extends Component {
         constructor(props) {

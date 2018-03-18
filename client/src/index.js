@@ -1,6 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import Hello from './Hello';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { App } from './containers';
 
-render(<Hello name="Nico" />, document.getElementById('root'));
+const app = (
+  <Router>
+    <div>
+      <App />
+    </div>
+  </Router>
+);
+
+render(app, document.getElementById('root'));

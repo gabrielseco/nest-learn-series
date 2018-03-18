@@ -31,12 +31,12 @@ class ReactStatelessComponent extends Component {
   defaultReactComponent(component) {
     return `
       import React from 'react';
-      import PropTypes from 'prop-types';
-      import styles from './${component}.scss';
+      /*import PropTypes from 'prop-types';
+      import styles from './${component}.scss';*/
       
       const ${component} = () => (
         <div>
-          Generated component 
+          <h2>${component} Stateful Component generated from the cli</h2>
         </div>
       );
       
@@ -64,7 +64,7 @@ class ReactStatelessComponent extends Component {
 
   defaultIndex(component) {
     return `
-      export Goodbye from './${component}'
+      export { default as ${component} } from './${component}';
     `;
   }
 
