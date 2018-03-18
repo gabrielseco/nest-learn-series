@@ -6,4 +6,6 @@ export interface IFilm {
   year: number;
   idMovieDB?: number;
   colour?: string;
+  createdAt: string;
+  updatedAt: string;
 }

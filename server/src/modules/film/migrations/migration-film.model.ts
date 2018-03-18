@@ -1,5 +1,5 @@
-import { IFilm } from "../interfaces/film";
-import { IMigrationFilm } from "./interfaces";
+import { IFilm } from '../interfaces/film';
+import { IMigrationFilm } from './interfaces';
 
 export class MigrationFilm implements IFilm {
   id: number;
@@ -11,7 +11,7 @@ export class MigrationFilm implements IFilm {
   colour?: string;
   createdAt: string;
   updatedAt: string;
-  
+
   constructor(migrationFilm: IMigrationFilm) {
     this.id = migrationFilm.id;
     this.name = migrationFilm.nombre;

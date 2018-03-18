@@ -23,6 +23,6 @@
     "**/*.spec.ts"
   ],
   "files": [
-    "typings.d.ts",
+    "typings.d.ts"
   ]
 }

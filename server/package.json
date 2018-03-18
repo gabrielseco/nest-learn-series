@@ -10,7 +10,7 @@
     "start:prod": "node dist/main.js",
     "test": "jest",
     "test:watch": "jest --watchAll --coverage",
-    "migration:film": "ts-node ./src/modules/film/migrations/main.ts"
+    "migrate:film": "ts-node ./src/modules/film/migrations/main.ts"
   },
   "dependencies": {
     "@nestjs/common": "^4.5.9",

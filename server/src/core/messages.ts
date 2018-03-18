@@ -4,5 +4,6 @@ export const MESSAGES = {
   },
   FILM: {
     LIST_FOUND: 'List of films has been found',
+    MIGRATED: 'The film has been migrated',
   },
 };

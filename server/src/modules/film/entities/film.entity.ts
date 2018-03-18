@@ -17,9 +17,15 @@ export class Film {
   @Column({ type: 'int', length: 11})
   year: number;
 
-  @Column({ length: 10, nullable: true})
+  @Column({ type: 'int', length: 11, nullable: true})
   idMovieDB: string;
 
   @Column({ length: 10, nullable: true})
   colour: string;
+
+  @Column({ type: 'datetime'})
+  createdAt: string;
+
+  @Column({ type: 'datetime'})
+  updatedAt: string;
 }
