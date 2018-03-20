@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-import { Header, Footer } from './../../components';
+import { Header } from './../../components';
 /* import PropTypes from 'prop-types';
 import styles from './App.scss'; */
 
@@ -14,7 +14,6 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Footer />
       </div>
     );
   }

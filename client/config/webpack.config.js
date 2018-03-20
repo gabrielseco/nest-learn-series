@@ -3,7 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const TITLE = 'Learn Series';
+const { HOST, PORT, TITLE } = require('./env/dev.env');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -13,7 +13,7 @@ module.exports = {
     publicPath: '/'
   },
   entry: [
-    `webpack-dev-server/client?http://localhost:3000`,
+    `webpack-dev-server/client?http://${HOST}:${PORT}`,
     'webpack/hot/only-dev-server',
     './src/index.js'
   ],

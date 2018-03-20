@@ -1,9 +1,7 @@
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const config = require('./webpack.config');
-
-const HOST = 'localhost';
-const PORT = 3000;
+const { HOST, PORT } = require('./env/dev.env');
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
