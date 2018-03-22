@@ -10,7 +10,7 @@
   ],
   "plugins": [
     "react-hot-loader/babel",
-    "transform-object-rest-spread",
+    "@babel/proposal-object-rest-spread",
     "@babel/plugin-proposal-pipeline-operator"
   ]
 }
