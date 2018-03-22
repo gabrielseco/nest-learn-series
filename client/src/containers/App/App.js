@@ -12,6 +12,15 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    this.setState(prevState => {
+      return {
+        ...prevState,
+        isMenuActive: true
+      };
+    });
+  }
+
   render() {
     return (
       <div>
