@@ -3,7 +3,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const TITLE = 'Learn Series';
+const { HOST, PORT, TITLE } = require('./env/dev.env');
+const loaders = require('./webpack/loaders');
+const optimization = require('./webpack/optimization');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -13,10 +15,11 @@ module.exports = {
     publicPath: '/'
   },
   entry: [
-    `webpack-dev-server/client?http://localhost:3000`,
+    `webpack-dev-server/client?http://${HOST}:${PORT}`,
     'webpack/hot/only-dev-server',
     './src/index.js'
   ],
+  optimization: optimization,
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
@@ -30,27 +33,7 @@ module.exports = {
     })
   ],
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: ['babel-loader', 'eslint-loader']
-      },
-      {
-        test: /\.scss/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              module: true
-            }
-          },
-          'postcss-loader',
-          'sass-loader'
-        ]
-      }
-    ]
+    rules: loaders
   },
   mode: 'development'
 };

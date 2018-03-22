@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-import { Header, Footer } from './../../components';
+import { Header, OverlayMenu } from './../../components';
 /* import PropTypes from 'prop-types';
 import styles from './App.scss'; */
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      isMenuActive: false
+    };
   }
 
   render() {
     return (
       <div>
         <Header />
-        <Footer />
+        <OverlayMenu open={this.state.isMenuActive} />
       </div>
     );
   }

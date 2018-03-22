@@ -31,8 +31,8 @@ class ReactStatelessComponent extends Component {
   defaultReactComponent(component) {
     return `
       import React from 'react';
-      /*import PropTypes from 'prop-types';
-      import styles from './${component}.scss';*/
+      import PropTypes from 'prop-types';
+      import styles from './${component}.scss';
       
       const ${component} = () => (
         <div>
