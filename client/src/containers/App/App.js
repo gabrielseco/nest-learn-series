@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { hot } from 'react-hot-loader';
 import { Header, OverlayMenu } from './../../components';
 /* import PropTypes from 'prop-types';
 import styles from './App.scss'; */
@@ -33,4 +32,4 @@ class App extends Component {
 
 App.propTypes = {};
 
-export default hot(module)(App);
+export default App;

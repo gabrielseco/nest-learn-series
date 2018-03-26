@@ -5,7 +5,7 @@ import OverlayMenu from './OverlayMenu';
 
 describe('OverlayMenu suite', () => {
   it('should render the OverlayMenu component', () => {
-    const component = shallow(<OverlayMenu />);
+    const component = shallow(<OverlayMenu open={false} />);
     expect(component).toBeDefined();
   });
 });
