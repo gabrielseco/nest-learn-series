@@ -1,12 +1,12 @@
 const path = require('path');
 
-const RELATIVE_PATH = path.join(__dirname, '../../');
+const SRC = path.join(__dirname, '../../src');
 
 const resolve = {
   alias: {
-    Containers: path.resolve(path.join(RELATIVE_PATH, 'src/containers')),
-    Components: path.resolve(path.join(RELATIVE_PATH, 'src/components/')),
-    Styles: path.resolve(path.join(RELATIVE_PATH, 'src/styles/'))
+    components: path.join(SRC, 'components'),
+    containers: path.join(SRC, 'containers'),
+    styles: path.join(SRC, 'styles')
   }
 };
 

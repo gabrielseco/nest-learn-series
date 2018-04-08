@@ -1,5 +1,5 @@
 import React, { Component, StrictMode } from 'react';
-import { Header, OverlayMenu } from 'Components';
+import { Header, OverlayMenu } from 'components';
 /* import PropTypes from 'prop-types';
 import styles from './App.scss'; */
 
