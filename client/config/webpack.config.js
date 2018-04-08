@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { HOST, PORT, TITLE } = require('./env/dev.env');
 const loaders = require('./webpack/loaders');
 const optimization = require('./webpack/optimization');
+const resolve = require('./webpack/resolve');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -19,6 +20,7 @@ module.exports = {
     'webpack/hot/only-dev-server',
     './src/index.js'
   ],
+  resolve: resolve,
   optimization: optimization,
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

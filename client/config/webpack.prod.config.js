@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { TITLE } = require('./env/dev.env');
 const loaders = require('./webpack/loaders');
 const optimization = require('./webpack/optimization');
+const resolve = require('./webpack/resolve');
 
 module.exports = {
   devtool: 'source-map',
@@ -14,6 +15,7 @@ module.exports = {
     publicPath: './static/'
   },
   entry: ['./src/index.js'],
+  resolve: resolve,
   optimization: optimization,
   plugins: [
     new HtmlWebpackPlugin({

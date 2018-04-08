@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Header, OverlayMenu } from './../../components';
+import React, { Component, StrictMode } from 'react';
+import { Header, OverlayMenu } from 'Components';
 /* import PropTypes from 'prop-types';
 import styles from './App.scss'; */
 
@@ -22,10 +22,12 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header />
-        <OverlayMenu open={this.state.isMenuActive} />
-      </div>
+      <StrictMode>
+        <div>
+          <Header />
+          <OverlayMenu open={this.state.isMenuActive} />
+        </div>
+      </StrictMode>
     );
   }
 }

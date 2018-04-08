@@ -1,4 +1,11 @@
 {
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./config/webpack.config.js"
+      }
+    }
+  },
   "parser": "babel-eslint",
   "extends": [
     "airbnb",
